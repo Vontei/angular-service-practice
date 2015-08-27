@@ -13,7 +13,7 @@ app.controller('addController', function($scope, $http, $routeParams){
     $scope.result = parseInt($routeParams.num1) + parseInt($routeParams.num2)
 })
 
-app.controller('queryController', function($scope,$http, $routeParams, $location){
+app.controller('queryController', function($scope, $routeParams){
     $scope.result = parseInt($routeParams.x) + parseInt($routeParams.y);
     console.log($routeParams)
 

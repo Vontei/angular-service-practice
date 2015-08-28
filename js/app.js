@@ -4,7 +4,9 @@ app.config(function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'partials/home.html',
-        controller: 'HomeController'
+        controller: 'HomeController',
+        controller:  'zenController'
+
       })
       .when('/resume', {
         templateUrl: 'partials/resume.html',
@@ -26,6 +28,7 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: 'partials/query.html',
         controller: 'queryController'
       })
+
 
     $locationProvider.html5Mode(true);
 

@@ -3,3 +3,27 @@
 <p>Filter hello_class to {{"hello_class" | kebab}}</p>
 <p> Number in the same filter {{'43' | kebab}}</p>
 <p> Camel Replace   {{'hey_dude' | camel}}</p>
+<p>API DATA ...{{zenData}}</p>
+
+<h2>Jack Johnson Songs : From Itunes API</h2>
+<div ng-repeat='result in JJ'>
+  <p>{{result.trackName}}</p>
+</div>
+
+<h2>Chatter</h2>
+<div ng-repeat='chat in chatter'>
+  <p>Name: {{chat.name}}</p>
+  <p>Content: {{chat.content}}</p>
+</div>
+
+
+<div>
+  <form ng-submit='submitComment()' method='post'>
+    <h3> Add a Post</h3>
+    <label>Name</label>
+    <input ng-model='name' type='text'>
+    <label>Content</label>
+    <input ng-model='content' type='text'>
+    <input ng-click='submitComment()' type='submit' ng-click='submitComment()' value='Submit' class='btn btn-primary'>
+  </form>
+</div>
